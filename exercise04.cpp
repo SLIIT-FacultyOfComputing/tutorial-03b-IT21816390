@@ -1,8 +1,9 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-void print(int len, int wth);
-void input(int len, int wth);
+void print(int length, int width);
+void input(int &length, int &width);
 
 // Do not change the main() function
 int main() {
@@ -13,9 +14,12 @@ int main() {
 }
 
 // Do not change the print() function
-void print(int len, int wth) {
-   cout << "Length : " << len 
-        << ", Width  : " << wth << endl;
+void print(int length, int width) {
+   cout << "Length : " << length 
+        << ", Width  : " << width << endl;
 }
 
 // Implement the Input Function here
+void input(int &length, int &width){
+    cin >> length >> width ;
+}
